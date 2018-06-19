@@ -64,7 +64,7 @@ your computers, media centers, and portable electronic devices.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q -n %{lname}-%{version}-source
+%setup -q -n %{lname}-%{version}
 %apply_patches
 
 find . -name "Makefile*" -o -name "*.m4" |xargs sed -i -e 's,configure.in,configure.ac,g'
